@@ -2,7 +2,7 @@
 
 Console.Write("Введите число ->");
 
-String numberStr = Console.ReadLine();
+String? numberStr = Console.ReadLine();
 
 int number = int.Parse(numberStr);
 
