@@ -56,4 +56,60 @@ string Method4(int count, string c)
 }
 
 string res = Method4(10, "za");
-Console.WriteLine(res);
+//Console.WriteLine(res);
+
+
+
+
+
+// Вывод таблицы умножения с помощью for.
+/*for (int i = 2; i <= 10; i++)
+{
+    for (int j = 2; j <= 10; j++)
+    {
+        Console.WriteLine($"{i} x {j} = {i*j}");
+    }
+    Console.WriteLine();
+}*/
+
+
+
+
+
+//========Работа с текстом
+// Дан текст. В тексте нужно все пробелы заменить на черточки,
+// маленькие буквы "к" заменить большими "К",
+// а большие "С" заменить маленькими "с".
+
+string text = "– Ну что же, – задумчиво отозвался тот, – они – люди как люди. Любят деньги, но ведь это всегда было…"
+            + "Человечество любит деньги, из чего бы те ни были Сделаны, из кожи ли, из бумаги ли, из бронзы или золота."
+            + "Ну, легкомысленны… ну, что ж… и милосердие иногда Стучится в их Сердца… обыкновенные люди…"
+            + "В общем, напоминают прежних… квартирный вопрос только испортил их…";
+
+
+// string s = "qwerty"
+//             012345
+// s[3]  // r
+
+string Replace(string text, char oldValue, char newValue)
+{
+    string result = String.Empty;
+
+    int length = text.Length;
+    for (int i = 0; i < length; i++)
+    {
+        if(text[i] == oldValue) result = result + $"{newValue}";
+        else result = result + $"{text[i]}";
+    }
+
+    return result;
+}
+
+string newText = Replace(text, ' ', '|');
+Console.WriteLine(newText);
+Console.WriteLine();
+string newText1 = Replace(newText, 'к', 'К');
+Console.WriteLine(newText1);
+Console.WriteLine();
+string newText2 = Replace(newText1, 'С', 'с');
+Console.WriteLine(newText2);
