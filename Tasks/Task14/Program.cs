@@ -9,7 +9,7 @@ while (number >= 1000)
     number = number/10;
 }
 
-if(number >=10)
+if(number > 100)
 {
     Console.WriteLine($"Третья цифра числа: {number % 10}");
 }
