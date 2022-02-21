@@ -42,6 +42,7 @@ void Search (int num)
         {
             Console.WriteLine ($"Индекс введенного числа в данном массиве: {i}");
         }
+        else Console.WriteLine ("Введенного числа нет в данном массиве.");
         i++;
     }
 }
