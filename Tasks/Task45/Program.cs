@@ -18,13 +18,13 @@ double Fibonachi (int n)
         temp = a;
         a = b;
         b = temp + b;
-        Console.WriteLine(a);
+        Console.Write($"{a} ");
     }
     return a;
 }
 double result = Fibonachi (a);
 
-
+Console.WriteLine();
 
 Console.WriteLine("Числа Фибоначчи через рекурсию:");
 
@@ -37,5 +37,5 @@ double FibonachiRecurs (int n)
 
 for (int i = 0; i <= b; i++)
 {
-    Console.WriteLine(FibonachiRecurs(i));
+    Console.Write($"{FibonachiRecurs(i)} ");
 }
