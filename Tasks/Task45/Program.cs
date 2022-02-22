@@ -1,5 +1,12 @@
 ﻿// Показать числа Фибоначчи.
 
+Console.Write("Введите число a: ");
+int a = int.Parse(Console.ReadLine());
+Console.Write("Введите число b: ");
+int b = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Числа Фибоначчи через цикл:");
+
 double Fibonachi (int n)
 {
     double temp;
@@ -15,6 +22,11 @@ double Fibonachi (int n)
     }
     return a;
 }
+double result = Fibonachi (a);
+
+
+
+Console.WriteLine("Числа Фибоначчи через рекурсию:");
 
 double FibonachiRecurs (int n)
 {
@@ -23,8 +35,7 @@ double FibonachiRecurs (int n)
     return FibonachiRecurs(n-1) + FibonachiRecurs(n-2);
 }
 
-int a = int.Parse(Console.ReadLine());
-int b = int.Parse(Console.ReadLine());
-
-Console.WriteLine($"Через цикл - {Fibonachi(a)}");
-Console.WriteLine($"Через рекурсию - {FibonachiRecurs(b)}");
+for (int i = 0; i <= b; i++)
+{
+    Console.WriteLine(FibonachiRecurs(i));
+}
