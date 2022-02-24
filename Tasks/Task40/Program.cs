@@ -30,4 +30,4 @@ double difference = max - min;
 
 Console.WriteLine($"Максимальный элемент массива: {max}");
 Console.WriteLine($"Минимальный элемент массива: {min}");
-Console.WriteLine($"Разница между максимальным и минимальным элементом: {difference}");
+Console.WriteLine($"Разница между максимальным и минимальным элементом: {difference:F2}");
