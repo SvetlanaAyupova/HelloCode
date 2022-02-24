@@ -7,7 +7,7 @@ void FullArray()
     Random number = new Random();
     for (int i = 0; i < arr.Length; i++)
     {
-        arr[i] = number.Next(-20, 20) + number.NextDouble();
+        arr[i] = Math.Round(number.NextDouble()*100, 2);
         Console.Write($"{arr[i]} ");
     }
 }
