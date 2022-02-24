@@ -30,14 +30,15 @@ void PrintArray()
 
 void AverageSum()
 {
-    double result = 0;
     for (int j = 0; j < arr.GetLength(1); j++)
     {
+        double result = 0;
         for (int i = 0; i < arr.GetLength(0); i++)
         {
             result = result + arr[i, j];
         }
         Console.WriteLine($"Среднее арифметическое столбца {j} = {result / arr.GetLength(0):F2}");
+
     }
 }
 
