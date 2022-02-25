@@ -36,7 +36,7 @@ void DiagonalSum()
         for (int i = 0; i < arr.GetLength(0); i++)
         {
             if (i == j)
-            sum = sum + arr[i, j];
+                sum = sum + arr[i, j];
         }
     }
     Console.WriteLine($"Сумма элементов главной диагонали = {sum}.");
