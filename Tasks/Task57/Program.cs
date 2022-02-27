@@ -33,14 +33,14 @@ void SelectionSort(int[,] arr)
     {
         for (int j = 0; j < arr.GetLength(1)-1; j++)
         {
-            int minPosition = j;
+            int maxPosition = j;
             for (int k = j+1; k < arr.GetLength(1); k++)
             {
-                if (arr[i,k] < arr[i,minPosition]) minPosition = k;
+                if (arr[i,k] > arr[i,maxPosition]) maxPosition = k;
             }
             int temporary = arr[i,j];
-            arr[i,j] = arr[i,minPosition];
-            arr[i,minPosition] = temporary;
+            arr[i,j] = arr[i,maxPosition];
+            arr[i,maxPosition] = temporary;
 
         }
     }
